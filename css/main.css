@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+  /*Reseteando los estilos por defecto del navegador*/
+  margin: 0;
+}
+
+
+/*Styles for header*/
+header{
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header ul{
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header li{
+  display: inline-block;
+}
+
+/*Styles for main menu*/
+
+.main-menu{
+  border-bottom: #b5b5b5;
+}
+
+.logo a{
+  color: #bd081c;
+}
+
+.logo a:hover{
+  color: #ffc107;
+}
+
+
+.logo{
+  height: 100%;
+  vertical-align: middle;
+}
+.search{
+  background-color: #efefef;
+  border-radius: 10px;
+  margin: 0 20px;
+  width: 70%;
+}
+
+.search-box, .search-filter{
+  display: inline-block;
+}
+
+
+.search-box{
+  width: 85%;
+  padding: 5px;
+}
+
+.search-box form{
+  display: inline-block;
+  width: 85%;
+}
+.search-box input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.gray-icon{
+  padding: 0 10 px;
+  margin: 0 7px;
+}
+
+.gray-icon i{
+  color: #b5b5b5;
+}
+
+/*styles for filter menu*/
+.filter-menu li{
+  border-radius: 6px;
+  height: 60px;
+  margin: 5px;
+  padding: 0 24px;
+  background-color: gray;
+  /*Sino Carga la imagne carga el color por que su backgraund color esta debajo por el orden del código*/
+  background-image: url("../assets/imgs/imgs-pag/n.jpg");
+
+}
+
+.filter-menu span{
+  color: #fff;
+  font-weight: 700;
+  line-height: 60px;
+  padding: 0 2px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,153,204,0.5);
+  cursor: pointer;
+}
+
+
+/*styles for results*/
+.search-result{
+  margin: 170px 80px 50px;
+  min-width: 900px;
+  /*overflow: auto;*/
+
+}
+
+.image{
+  /*float: left;*/
+  /*Float sirve solo cuando tenemos un tamaño de columna definido*/
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.image img{
+  max-width: 100%;
+  border-radius: 8px;
+}
